@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="stilo.css">
+    <title>Formulario</title>
 </head>
 <body>
-    <h1 > Rafael Medina Quezada</h1>
+    <h2>Formulario</h2>
+    <form action="guardar.php" method="post">
+        <label for="Nombre" id="Nombre" maxlength="30" required>nombre</label><br>
+        <input type="text" name="Nombre" id="Nombre" maxlength="30" required><br>
 
+        <label for="Apellidos" id="Apellidos" maxlength="30" required>apellido</label><br>
+        <input type="text" name="Apellidos" id="Apellidos" maxlength="60" required><br>
+
+        <label for="Calle" id="Calle" maxlength="30" required>calle</label><br>
+        <input type="text" name="Calle" id="Calle" maxlength="60" required><br>
+
+        <button type="submit">Enviar registro
+        </button>
+        
+    </form>
 </body>
 </html>
